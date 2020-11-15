@@ -1,0 +1,11 @@
+{
+  "name": "mfp",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "dev": "lerna run --scope container start"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
