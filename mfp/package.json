@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "dev": "lerna run --scope container start"
+    "dev": "lerna run  start",
+    "build": "lerna run build"
+
   },
   "devDependencies": {
     "lerna": "^3.22.1"
