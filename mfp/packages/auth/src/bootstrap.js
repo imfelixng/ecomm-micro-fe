@@ -5,8 +5,10 @@ import { createMemoryHistory, createBrowserHistory } from 'history';
 import App from './app';
 
 
-const mount = (el, { onNavigate, defaultHistory }) => {
-    const history = defaultHistory || createMemoryHistory();
+const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
+    const history = defaultHistory || createMemoryHistory({
+        initialEntries: [initialPath] // Set initial path with parent path name
+    });
     if (onNavigate) {
         history.listen(onNavigate); // Listen route changed from container
     }
